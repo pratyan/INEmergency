@@ -1,0 +1,318 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hospital_id",
+						"type": "uint256"
+					}
+				],
+				"name": "_hospitalCon",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "patient_id",
+						"type": "uint256"
+					}
+				],
+				"name": "_patientCon",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_a_capacity",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_rate",
+						"type": "uint32"
+					}
+				],
+				"name": "_registerHospital",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_age",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_gender",
+						"type": "uint32"
+					}
+				],
+				"name": "_registerPatient",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_transP2H",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hospital_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_a_capacity",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_rate",
+						"type": "uint32"
+					}
+				],
+				"name": "_updateHData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "patient_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_age",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_gender",
+						"type": "uint32"
+					}
+				],
+				"name": "_updatePdata",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "hospitalToOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "hospitals",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "a_capacity",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "rate",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patientToOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patients",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint32",
+						"name": "age",
+						"type": "uint32"
+					},
+					{
+						"internalType": "uint32",
+						"name": "gender",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"_hospitalCon(uint256)": {
+					"notice": "for hospital confirmation"
+				},
+				"_patientCon(uint256)": {
+					"notice": "for patient confirmation"
+				},
+				"_registerHospital(string,uint32,uint32)": {
+					"notice": "registration of hospitals"
+				},
+				"_registerPatient(string,uint32,uint32)": {
+					"notice": "registration of patients"
+				},
+				"_transP2H()": {
+					"notice": "transaction of the concern patient to the recomended hospital"
+				},
+				"_updateHData(uint256,uint32,uint32)": {
+					"notice": "updating hospital's data"
+				},
+				"_updatePdata(uint256,uint32,uint32)": {
+					"notice": "updating patient's data"
+				},
+				"hospitalToOwner(uint256)": {
+					"notice": "to map the hospital's id to its address"
+				},
+				"hospitals(uint256)": {
+					"notice": "main array to store the data/hospitals"
+				},
+				"patientToOwner(uint256)": {
+					"notice": "to map the hospital's id to its address"
+				},
+				"patients(uint256)": {
+					"notice": "main array to store the patient data"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/main.sol": "DarkHospital"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/main.sol": {
+			"keccak256": "0x49f3c312165c9a0e1b4fda7cf90ea3fb79abb7c7bdb18843b3a687eadc25eece",
+			"urls": [
+				"bzz-raw://8c44bf0a368bdb147221c00120d02d204a7cd725b673633c73f7dc8acdcd6599",
+				"dweb:/ipfs/QmZJVbQSsc1ErDppzxfuPjm4apbrhcQFD5DPUMS5Eb23Di"
+			]
+		}
+	},
+	"version": 1
+}
